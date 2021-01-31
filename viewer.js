@@ -36,7 +36,7 @@
 // **DO THIS**:
 //   Replace BUCKET_NAME with the bucket name.
 //
-var albumBucketName = 'photo-booth-bucket';
+var albumBucketName = 'photo-booth-sg';
 
 // **DO THIS**:
 //   Replace this block of code with the sample code located at:
@@ -45,7 +45,7 @@ var albumBucketName = 'photo-booth-bucket';
 // Initialize the Amazon Cognito credentials provider
 AWS.config.region = 'ap-southeast-1'; // Region
 AWS.config.credentials = new AWS.CognitoIdentityCredentials({
-    IdentityPoolId: 'ap-southeast-1:',
+    IdentityPoolId: 'ap-southeast-1:e4b7304a-b623-4804-a00b-36d22cf1d6ec',
 });
 
 // Create a new service object
